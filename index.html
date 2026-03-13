@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pure Honey – Buy Natural Honey Online</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #fff8ec;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      position: relative;
+      background: #2d1e12 url('images/banner-1.png') center/cover no-repeat;
+      color: #fff;
+      padding: 80px 20px;
+      text-align: center;
+    }
+    header::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(12, 19, 11, 0.75);
+    }
+    header * {
+      position: relative;
+      z-index: 1;
+    }
+    header h1 {
+      font-size: 3.2rem;
+      margin: 0;
+      color: #ffb703;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    header h2 {
+      font-size: 1.6rem;
+      font-weight: 300;
+      margin-top: 5px;
+      color: #fff8ec;
+    }
+    header p {
+      font-size: 1.1rem;
+      color: #fff8ecbb;
+      margin-top: 15px;
+    }
+
+    .container {
+      max-width: 1400px; /* Wider container to fit 4 in a row comfortably */
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    /* Category Section Styles */
+    .section-title {
+      text-align: center;
+      font-size: 2.2rem;
+      color: #432818;
+      margin-bottom: 50px;
+    }
+    .section-title span {
+      display: block;
+      width: 80px;
+      height: 4px;
+      background: #f77f00;
+      margin: 10px auto;
+      border-radius: 2px;
+    }
+
+    /* Force 4 columns in a single row for desktop */
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); 
+      gap: 15px;
+      margin-bottom: 60px;
+    }
+
+    .product-card {
+      background: #fff;
+      border-radius: 15px;
+      padding: 15px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+      display: flex;
+      flex-direction: column;
+      border: 1px solid #f2e9d9;
+    }
+    .product-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+    }
+    .product-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      margin-bottom: 15px;
+      border-radius: 10px;
+    }
+    .product-card h3 {
+      margin: 5px 0;
+      color: #432818;
+      font-size: 1.05rem;
+      min-height: 2.4em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .price-tag {
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: #d62828;
+      margin: 5px 0 10px 0;
+    }
+
+    .quantity-select {
+      width: 100%;
+      padding: 8px;
+      border-radius: 8px;
+      border: 2px solid #eee;
+      background: #fafafa;
+      margin-bottom: 12px;
+      font-size: 0.9rem;
+      color: #432818;
+      cursor: pointer;
+      outline: none;
+    }
+    .quantity-select:focus {
+      border-color: #f77f00;
+    }
+
+    .btn-whatsapp {
+      background: #25D366;
+      color: #fff;
+      border: none;
+      padding: 10px;
+      border-radius: 8px;
+      font-size: 0.85rem;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s;
+      width: 100%;
+      margin-top: auto;
+    }
+    .btn-whatsapp:hover {
+      background: #1ebe5d;
+    }
+
+    /* FAQ Section */
+    .faq {
+      margin-top: 80px;
+      background: #fff;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+    }
+    details {
+      background: #fff8ec;
+      margin-bottom: 12px;
+      padding: 15px 20px;
+      border-radius: 10px;
+      border-left: 4px solid #f77f00;
+    }
+    summary {
+      font-weight: bold;
+      cursor: pointer;
+      color: #432818;
+    }
+
+    footer {
+      background: #1a120b;
+      color: #fff8ec88;
+      text-align: center;
+      padding: 50px 20px;
+      margin-top: 60px;
+    }
+    footer strong { color: #fff; }
+
+    /* Responsive adjustments */
+    @media (max-width: 992px) {
+      .products-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 500px) {
+      .products-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+
+  <img src="images/logo.png" alt="">
+  <!--
+  <img src="https://via.placeholder.com/180x80?text=Honey+Logo" alt="Honey Logo" style="max-width:180px;margin-bottom:15px;" />
+  -->
+  <h1>No heating, No treating </h1><h2> 100% Pure & Natural Honey</h2>
+
+
+  <p>Taste may vary depending upon seasonal flowering</p>
+</header>
+
+<div class="container">
+  <h2 class="section-title">Shop by Category <span></span></h2>
+  
+  <section class="products-grid">
+    <!-- Product 1: Mustard -->
+    <div class="product-card">
+      <img src="images/honey-250g.png" alt="Mustard Honey">
+      <h3>Mustard Honey</h3>
+      <div class="price-tag" id="price-1">₹350</div>
+      <select class="quantity-select" id="qty-1" onchange="updatePrice(1)">
+        <option value="250g" data-price="350">250g Packaging</option>
+        <option value="500g" data-price="650">500g Packaging</option>
+        <option value="1kg" data-price="1200" selected>1kg Packaging</option>
+      </select>
+      <button class="btn-whatsapp" onclick="sendOrder('Mustard Honey', 'qty-1')">Order on WhatsApp</button>
+    </div>
+
+    <!-- Product 2: Multiflora -->
+    <div class="product-card">
+      <img src="images/honey-1kg.png" alt="Multiflora Honey">
+      <h3>Multiflora Honey</h3>
+      <div class="price-tag" id="price-2">₹400</div>
+      <select class="quantity-select" id="qty-2" onchange="updatePrice(2)">
+        <option value="250g" data-price="400">250g Packaging</option>
+        <option value="500g" data-price="750">500g Packaging</option>
+        <option value="1kg" data-price="1400" selected>1kg Packaging</option>
+      </select>
+      <button class="btn-whatsapp" onclick="sendOrder('Multiflora Honey', 'qty-2')">Order on WhatsApp</button>
+    </div>
+
+    <!-- Product 3: Crystal -->
+    <div class="product-card">
+      <img src="images/honey-500g.png" alt="Medicinal Sidr">
+      <h3>Premium Crystal Honey</h3>
+      <div class="price-tag" id="price-3">₹800</div>
+      <select class="quantity-select" id="qty-3" onchange="updatePrice(3)">
+        <option value="250g" data-price="800">250g Packaging</option>
+        <option value="500g" data-price="1500">500g Packaging</option>
+        <option value="1kg" data-price="2800" selected>1kg Packaging</option>
+      </select>
+      <button class="btn-whatsapp" onclick="sendOrder('Premium Crystal Honey', 'qty-3')">Order on WhatsApp</button>
+    </div>
+
+    <!-- Product 4: Jungle -->
+    <div class="product-card">
+      <img src="images/honey.png" alt="Deep Forest">
+      <h3>Jungle Honey</h3>
+      <div class="price-tag" id="price-4">₹450</div>
+      <select class="quantity-select" id="qty-4" onchange="updatePrice(4)">
+        <option value="250g" data-price="450">250g Packaging</option>
+        <option value="500g" data-price="850">500g Packaging</option>
+        <option value="1kg" data-price="1600" selected>1kg Packaging</option>
+      </select>
+      <button class="btn-whatsapp" onclick="sendOrder('Jungle Honey', 'qty-4')">Order on WhatsApp</button>
+    </div>
+  </section>
+
+  <section class="faq">
+    <h2 class="section-title">Uses & Benefits <span></span></h2>
+    <details>
+      <summary>What are the health benefits of honey?</summary>
+      <p>Honey boosts immunity, improves digestion, provides natural energy, and has antibacterial properties.</p>
+    </details>
+    <details>
+      <summary>Can honey be used daily?</summary>
+      <p>Yes. Consuming 1–2 teaspoons daily helps with metabolism, immunity, and overall wellness.</p>
+    </details>
+    <details>
+      <summary>Is this honey pure and chemical‑free?</summary>
+      <p>Yes. Our honey is 100% natural, raw, and free from preservatives or additives.</p>
+    </details>
+  </section>
+</div>
+
+<footer>
+  <p><strong>Arka Organic Life</strong></p>
+  <p>💬 WhatsApp: +91 92351 62284</p>
+  <p>📧 Email: arkaorganic.life@gmail.com</p>
+  <p>© 2025 Arka Life. All rights reserved.</p>
+</footer>
+
+<script>
+  function updatePrice(id) {
+    const select = document.getElementById(`qty-${id}`);
+    const selectedOption = select.options[select.selectedIndex];
+    const price = selectedOption.getAttribute('data-price');
+    document.getElementById(`price-${id}`).innerText = `₹${price}`;
+  }
+
+  function sendOrder(productName, selectId) {
+    const phone = '919235162284';
+    const select = document.getElementById(selectId);
+    const size = select.value;
+    const price = select.options[select.selectedIndex].getAttribute('data-price');
+    
+    const message = `Hello Arka Life! I would like to order:
+🍯 Product: ${productName}
+⚖️ Size: ${size}
+💰 Price: ₹${price}
+
+Please confirm my order and share payment details.`;
+    
+    const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+    window.open(url, '_blank');
+  }
+
+  window.onload = function() {
+    for(let i=1; i<=4; i++) updatePrice(i);
+  }
+</script>
+
+</body>
+</html>
